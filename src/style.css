@@ -32,17 +32,23 @@ body {
 .ellipse-container {
   content: '';
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 150px);
   left: calc(50% - 550px);
   width: 1100px;
-  height: 300px;
+  height: 400px;
+  z-index: -1
+}
+
+.ellipse-path {
+  position: absolute;
+  z-index: -2
 }
 
 .ellipse-animation {
   position: absolute;
   top: 0;
   left: 0;
-  offset-path: path("M0,100 a550,150 0 1,0 1100,0 a550,150 0 1,0 -1100,0");
+  offset-path: path("M0,200 a550,150 0 1,0 1100,0 a550,150 0 1,0 -1100,0");
   animation: moveAlongPath 3s infinite linear;
 }
 
