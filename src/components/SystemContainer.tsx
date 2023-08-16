@@ -4,9 +4,8 @@ import OrbitContainer from "./OrbitContainer";
 const SystemContainer = () => {
   return (
     <>
-    <OrbitContainer />
+      <OrbitContainer />
       <div className="center-container">
-        
         <Planet />
       </div>
     </>
