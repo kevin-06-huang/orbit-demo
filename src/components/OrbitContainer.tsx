@@ -1,10 +1,14 @@
 import Planet from "./Planet";
+import Moon from "./Moon";
 
 const OrbitContainer = () => {
   return (
-    <div className="center-container">
-      <Planet />
-    </div>
+    <>
+      <div className="center-container">
+        <Moon />
+        <Planet />
+      </div>
+    </>
   );
 };
 

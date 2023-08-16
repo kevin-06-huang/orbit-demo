@@ -1,5 +1,5 @@
 const Planet = () => {
-  return (<div className="circle"/>);
+  return <div className="planet" />;
 };
 
 export default Planet;
