@@ -1,5 +1,11 @@
+import Planet from "./Planet";
+
 const OrbitContainer = () => {
-  return <></>;
+  return (
+    <div className="center-container">
+      <Planet />
+    </div>
+  );
 };
 
 export default OrbitContainer;
