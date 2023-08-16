@@ -1,8 +1,8 @@
 import { createRoot } from "react-dom/client";
-import OrbitContainer from "./components/OrbitContainer";
+import SystemContainer from "./components/SystemContainer";
 
 const App = () => {
-  return <OrbitContainer />;
+  return <SystemContainer />;
 };
 
 const container = document.getElementById("root");

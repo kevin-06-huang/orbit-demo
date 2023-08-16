@@ -16,6 +16,9 @@ body {
   height: 100px;
   background-color: red;
   border-radius: 50%;
+  position: relative;
+  left: -200px;
+  top: 50px;
 }
 
 .center-container {
@@ -23,4 +26,33 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh
+}
+
+.ellipse-animation {
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: moveEllipse 5s cubic-bezier(0.42, 0, 0.58, 1) infinite; /* Adjust duration and animation timing as needed */
+}
+
+.ellipse-container::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 100px); /* Adjust the value as needed */
+  left: calc(50% - 325px); /* Adjust the value as needed */
+  width: 750px; /* Adjust the value as needed */
+  height: 300px; /* Adjust the value as needed */
+  border: 1px dashed rgb(0, 255, 34);
+  border-radius: 50%;
+  transform-origin: center top;
+  z-index: -1;
+}
+
+@keyframes moveEllipse {
+  0% {
+    transform: translate(0, 0); /* Start position */
+  }
+  100% {
+    transform: translate(400px, 150px); /* End position */
+  }
 }
