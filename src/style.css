@@ -40,18 +40,18 @@ body {
   z-index: -1;
 }
 
-@keyframes circle { 
-	to { transform: rotate(1turn); } 
+@keyframes ellipse {
+  0%   { transform: rotate(270deg) translateY(0); }
+  25%  { transform: rotate(180deg) translateY(-500px); }
+  50%  { transform: rotate(90deg) translateY(0); }
+  75%  { transform: rotate(0deg) translateY(500px); }
+  100% { transform: rotate(-90deg) translateY(0); }
 }
-@keyframes updown {
-	to { transform: translateY(200px); } 
-}
-figure {
-	animation: updown 1s infinite ease-in-out alternate;
-}
-div#redball {
-	width: 100px; height: 50px;
-	border-radius: 50%; background: red;
-	transform-origin: center 300%;
-	animation: circle 2s infinite linear;
+
+.ellipse-animation {
+	transform-origin: center 600px;
+	animation: ellipse 4s infinite linear;
+  position: relative;
+  left: 500px;
+  top: -450px;
 }
