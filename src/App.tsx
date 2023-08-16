@@ -1,8 +1,8 @@
 import { createRoot } from "react-dom/client";
-import Game from "./components/Game";
+import OrbitContainer from "./components/OrbitContainer";
 
 const App = () => {
-  return (<></>);
+  return <OrbitContainer />;
 };
 
 const container = document.getElementById("root");
