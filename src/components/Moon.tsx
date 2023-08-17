@@ -1,5 +1,5 @@
 const Moon = () => {
-  return <div className="moon ellipse-animation figure"></div>;
+  return <div className="moon ellipse-animation"></div>;
 };
 
 export default Moon;
