@@ -36,6 +36,8 @@ body {
   left: calc(50% - 550px);
   width: 1100px;
   height: 400px;
+  border: 1px dashed rgb(0, 255, 34);
+  border-radius: 50%;
   z-index: -1
 }
 
@@ -60,6 +62,24 @@ body {
       offset-distance: 100%;
   }
 }
+
+/* begin with this block
+@keyframes circle { 
+	to { transform: rotate(1turn); } 
+}
+@keyframes updown {
+	to { transform: translateY(200px); } 
+}
+figure {
+	animation: updown 1s infinite ease-in-out alternate;
+}
+div#redball {
+	width: 100px; height: 50px;
+	border-radius: 50%; background: red;
+	transform-origin: center 300%;
+	animation: circle 2s infinite linear;
+}
+*/
 
 /*
 @keyframes ellipse {
